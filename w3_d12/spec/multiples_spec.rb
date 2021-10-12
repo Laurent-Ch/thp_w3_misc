@@ -14,3 +14,18 @@ describe "multiple_of_3_or_5? method" do
     expect(multiple_of_3_or_5?(64)).to eq(false)
   end
 end
+
+describe "sum_of_3_or_5_multiples method" do
+  it "should return the correct integer  when the input is a natural number" do
+    expect(sum_of_3_or_5_multiples(10)).to eq(23)
+    expect(sum_of_3_or_5_multiples(11)).to eq(33)
+    expect(sum_of_3_or_5_multiples(0)).to eq(0)
+    expect(sum_of_3_or_5_multiples(3)).to eq(0)
+  end
+
+  it "should return 'Please enter a natural number' when an integer is NOT a multiple of 3 or 5" do
+    expect(sum_of_3_or_5_multiples(-1)).to eq('Please enter a natural number')
+    expect(sum_of_3_or_5_multiples(1.23)).to eq('Please enter a natural number')
+    expect(sum_of_3_or_5_multiples('chiffre')).to eq('Please enter a natural number')
+  end
+end
