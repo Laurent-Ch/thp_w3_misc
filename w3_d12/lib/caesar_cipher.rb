@@ -32,10 +32,3 @@ def input_a_string?(input)
   return input.is_a? String
 end
 
-=begin
-puts caesar_cipher("Apple-Pie", 3)
-puts caesar_cipher(3, 4)
-puts caesar_cipher("cat", 4.71)
-puts caesar_cipher("cat", "cat")
-caesar_cipher(Apple-Piezzz, 3)
-=end

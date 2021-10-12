@@ -6,5 +6,6 @@ describe 'caesar_cihper' do
     expect(caesar_cipher("cat", 4.71)).to eq("Please enter a valid input: string and integer")
     expect(caesar_cipher(7, 7)).to eq("Please enter a valid input: string and integer")
     expect(caesar_cipher('Apple-Piezzz', 3)).to eq('Dssoh-Slhccc')
+    expect(caesar_cipher('Bumblebee', -2)).to eq('Zskzjczcc')
   end
 end
